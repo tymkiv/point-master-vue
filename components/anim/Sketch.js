@@ -108,7 +108,7 @@ export default class Sketch {
             vec4 pzResult = mix(pz1, pz2, blend);
             gl_Position = pzResult;
 
-            // gl_PointSize = uPixelRatio * (1.0 / - mvPosition.z);
+            gl_PointSize = 2.;
            
             
           
