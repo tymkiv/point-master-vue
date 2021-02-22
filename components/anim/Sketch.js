@@ -104,7 +104,7 @@ export default class Sketch {
           
             vec4 mvPosition = modelViewMatrix * vec4(p, 1.);
             vec4 pz1 = projectionMatrix * mvPosition;
-            vec4 pz2 = vec4( p.x, p.y, 0.0, 1.0 );
+            vec4 pz2 = vec4( p.x, p.y, p.z, 1.0 );
             vec4 pzResult = mix(pz1, pz2, blend);
             gl_Position = pzResult;
 
